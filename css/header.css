@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    color: royalblue
+}
+.logo{
+    font-weight: 700;
+    font-size: 20px;
+}
+.menu {
+    display: flex;
+}
+.menu-item{
+    margin-left: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
