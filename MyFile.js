@@ -5,6 +5,5 @@ function myFunction() {
 
 function scrollto(where) {
     var scrollDiv = document.getElementById(where).offsetTop;
-    
     window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
 }
