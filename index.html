@@ -12,87 +12,56 @@
     <script src="MyFile.js"></script>  
 </head>
 <body>
-    <header>
+    <header class="site-header" id="header">
         <div class="header_content">
             <div class="logo">
-                Portfolio
+                Mubarak
             </div>
             <div class="menu">
                 <div class="menu-item" onclick="scrollto('home')">Home</div>
                 <div class="menu-item" onclick="scrollto('about')">About</div>
                 <div class="menu-item" onclick="scrollto('services')">Services</div>
-                <div class="menu-item" onclick="scrollto('work')">Work</div>
-                <div class="menu-item" onclick="scrollto('contact')">Contact</div>
+                <div class="menu-item" onclick="scrollto('work')">Portfolio</div>
             </div>
+            <div class="btn">My CV</div>
         </div>
     </header>
 
     <div class="banner" id="home">
         <div class="banner-cover"></div>
+
         <div class="banner-content">
+            <div class="banner-image">
+                <img src="./images/intro-bg2.png"/>
+            </div>
+            <div class="socials">
+                <div class="icon">
+                    <img src="./images/fb.svg"/>
+                </div>
+                <div class="icon">
+                    <img src="./images/x.svg"/>
+                </div>
+                
+                <a href="https://www.linkedin.com/in/mubarak-suleiman-b0440191/" target="_blank">
+                    <div class="icon">
+                        <img src="./images/linkedin.svg"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="banner-center">
             <div class="banner-big">
                 I am Mubarak Suleiman
             </div>
             <div class="banner-text">
-                I Design, Teach and Analyze
+                I Teach and Analyze
             </div>
         </div>
     </div>
 
     <div class="about" id="about">
         <div class="about_container">
-            <div class="about_box">
-                <div class="about_info">
-                    <div class="about_image">
-                        <img src="./images/intro-bg2.jpg" alt="">
-                    </div>
-                    <div>
-                        <div class="about_info_each">
-                            <span class="bold">Name: </span> Mubarak Suleiman
-                        </div>
-                        <div class="about_info_each">
-                            <span class="bold">Profile: </span> Data Analyst
-                        </div>
-                        <div class="about_info_each">
-                            <span class="bold">Email: </span> Suleimanomubarak@gmail.com
-                        </div>
-                        <div class="about_info_each">
-                            <span class="bold">Phone: </span> +447867390193, +2348038587759
-                        </div>
-                    </div>
-                </div>
-                <div class="about_skills">
-                    <div><span class="bold">Skills</span></div>
-                    <div class="about_skill">
-                        <div>HTML</div> <div>75%</div>
-                    </div>
-                    <div class="about_progress"></div>
-                    
-                    <div class="about_skill">
-                        <div>CSS3</div> <div>75%</div>
-                    </div>
-                    <div class="about_progress"></div>
-                    
-                    <div class="about_skill">
-                        <div>BOOTSTRAP</div> <div>65%</div>
-                    </div>
-                    <div class="about_progress"></div>
-                    <div class="about_skill">
-                        <div>SQL</div> <div>65%</div>
-                    </div>
-                    <div class="about_progress"></div>
-
-                    <div class="about_skill">
-                        <div>Python</div> <div>70%</div>
-                    </div>
-                    <div class="about_progress"></div>
-
-                    <div class="about_skill">
-                        <div>PowerBI</div> <div>50%</div>
-                    </div>
-                    <div class="about_progress"></div>
-                </div>
-            </div>
             <div class="about_box">
                 <div class="about_title">
                     About Me
@@ -111,6 +80,79 @@
                     <a class="about_text_section" href="/Workspace/MUBARAK OLAREWAJU SULEIMAN CV new (2).docx">kindly find the attached copy of my CV</a>
                 </div>
             </div>
+            <div class="about_box">
+                    <div class="about_image">
+                        <img src="./images/intro-bg2.png" alt="">
+                    </div>
+            </div>
+        </div>
+        <div class="about_container basic">
+            <div>
+                <div class="about_title">
+                    Basic Info
+                </div>
+                
+                <div class="about_info">
+                    <div class="about_info_each">
+                        <div class="label">Name:</div>
+                        <div class="info"> Mubarak Suleiman </div>
+                    </div>
+                    <div class="about_info_each">
+                        <div class="label">Profile:</div>
+                        <div class="info"> Data Analyst </div>
+                    </div>
+                    <div class="about_info_each">
+                        <div class="label">Email:</div>
+                        <div class="info"> mubarak.suleiman@codevesel.co.uk </div>
+                    </div>
+                    
+                    <div class="about_info_each">
+                        <div class="label">Phone:</div>
+                        <div class="info"> +447867390193 </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="about_title">Skills</div>
+                
+                <div class="about_skills">
+                    
+                    <div class="about_skill">
+                        <div class="skill_image">
+                            <img src="./images/excel.svg"/>
+                        </div>
+                        <div class="skill_title">Excel</div>
+                    </div>
+                    
+                    <div class="about_skill">
+                        <div class="skill_image">
+                            <img src="./images/power-bi.svg"/>
+                        </div>
+                        <div class="skill_title">Power BI</div>
+                    </div>
+                    
+                    <div class="about_skill">
+                        <div class="skill_image">
+                            <img src="./images/sql.png"/>
+                        </div>
+                        <div class="skill_title">SQL</div>
+                    </div>
+                    
+                    <div class="about_skill">
+                        <div class="skill_image">
+                            <img src="./images/python.svg"/>
+                        </div>
+                        <div class="skill_title">Python</div>
+                    </div>
+                    <div class="about_skill">
+                        <div class="skill_image">
+                            <img src="./images/Tableau.png"/>
+                        </div>
+                        <div class="skill_title">Tableau</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--service section-->
@@ -118,47 +160,42 @@
         <div class="service">SERVICES</div>
         <div class="serviceArea">Services are as follow</div>
         <div></div>
-        <div class="container">
+        <div class="service_row_container">
             <div class="service_row">
                 <div class="column">
                     <div class="card">
                         <div class="circle-base">
-                            <a class="rounded-button" href="somewhere">
-                                <ion-icon name="desktop-outline" size="large"></ion-icon>
-                            </a> 
-                        </div> 
-                        <div class="service_title">Web Design/Developer</div>
-                        <p>I design, develop and deliver attractive website that leads to the success of my clients and will definitely attract more customers.“If you think good design is expensive, you should look at the cost of bad design."</p>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="circle-base">
-                            <a class="rounded-button" href="somewhere">
-                                <ion-icon name="clipboard-outline" size="large"></ion-icon>
-                            </a>  
+                            <img src="./images/teaching.svg"/>
                         </div>   
                         <div class="service_title">Teaching</div>
-                        <p>As a teacher, Communication is important.Transferring of information to a student or learning how you can better meet the needs of my students is pertinent. This requires a lot of patience, time,  leadership and problem solving skill</p>
+                        <p>As a teacher, Communication is important. Transferring of information to a student or learning how you can better meet the needs of my students is pertinent. This requires a lot of patience, time,  leadership and problem solving skill</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <div class="circle-base">
-                            <a class="rounded-button" href="somewhere">
-                                <ion-icon name="analytics-outline" size="large"></ion-icon>
-                            </a>
+                            <img src="./images/analyst.svg"/>
                         </div>
                         <div class="service_title">Data Analyst</div>
                         <p>Cleaning of data is germane! I use SQL, MS Excel and PowerBI for data analysis. I have worked with telecoms company and this experience has shown how to scrutinize data from initial to final stage. “Without data you're just another person with an opinion.”</p>
                     </div>
                 </div>
             </div>
+            
+            <div class="column">
+                <div class="card">
+                    <div class="circle-base">
+                        <img src="./images/visualise.svg"/>
+                    </div>
+                    <div class="service_title">Data Visualization</div>
+                    <p>I specialize in transforming complex datasets into clear, actionable insights using tools like Tableau, Power BI, and Python libraries (Matplotlib, Seaborn). Whether it's dashboards, reports, or custom visualizations, I help you see the story your data tells, making it easier to identify trends, outliers, and opportunities for growth.</p>
+                </div>
+            </div>
         </div>
                     
     </div>
     <div class="banner1">
-        <div class="banner-cover1"></div>
+        <!-- <div class="banner-cover1"></div> -->
         <div class="banner-content1">
             <div>
                 <div class="circle-base">
@@ -178,11 +215,11 @@
                     </a>
                 </div>
                 <div class="counter-num">
-                    <div class="counter">1</div>
+                    <div class="counter">5</div>
                     <span class="counter-text">YEARS OF EXPERIENCE</span>
                 </div> 
             </div>
-            <div>
+            <!-- <div>
                 <div class="circle-base">
                     <a class="rounded-button" href="somewhere">
                         <ion-icon name="people-outline" size="large"></ion-icon>
@@ -192,7 +229,7 @@
                     <div class="counter">10</div>
                     <span class="counter-text">TOTAL CLIENTS</span>
                 </div> 
-            </div>
+            </div> -->
         </div>
     </div>
     <!--Portfolio section-->
@@ -203,26 +240,24 @@
         <div class="portfolio_grid">
             <div class="porfolio_card">
                 <div class="portfolio_image">
-                    <img src="./images/work-1.jpg" alt="Avatar">
+                    <img src="./images/Snapshot Tableau.png" alt="Avatar">
                 </div>
                 <div class="portfolio_container_base">
                     <div>
-                        <div class="portfolio_title"></div> 
-                        <div>Web Services</div> 
+                        <div class="portfolio_title">Covid Data Analysis</div> 
+                        <div></div> 
                     </div>
-                    <div class="btn-1"><ion-icon name="add-outline" size="large"></ion-icon></div>
                 </div>
             </div>
             <div class="porfolio_card">
                 <div class="portfolio_image">
-                    <img src="./images/IMG_0361.JPG" alt="Avatar">
+                    <img src="./images/data-analysis.JPG" alt="Avatar">
                 </div>
                 <div class="portfolio_container_base">
                     <div>
-                        <div class="portfolio_title"></div> 
-                        <div>Lecturing</div> 
+                        <div class="portfolio_title">Data Analysis</div> 
+                        <div></div> 
                     </div>
-                    <div class="btn-1"><ion-icon name="add-outline" size="large"></ion-icon></div>
                 </div>
             </div>
             <div class="porfolio_card">
@@ -231,10 +266,9 @@
                 </div>
                 <div class="portfolio_container_base">
                     <div>
-                        <div class="portfolio_title"></div>
-                        <div>Data analysis</div> 
+                        <div class="portfolio_title">Data Visualization</div>
+                        <div></div> 
                     </div>
-                    <a class="btn-1" href="/Workspace/DiabetesAnalysis.pbix"><ion-icon name="add-outline" size="large"></a></ion-icon></a>
                 </div>
             </div>
         </div>
@@ -250,31 +284,48 @@
                 <textarea name="" id="" placeholder="Message"></textarea>
                 <div class="contact_btn">Send Message</div>
            </div>
-           <div class="contact_details">
+           <!-- <div class="contact_details">
                 <div class="contact_title">Get in Touch</div>
-                <div class="contact_text">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126844.08337545379!2d3.2236478!3d6.5371376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8e57c6a37a65%3A0xf7a917f5ae8faff2!2sDIOCESE%20OF%20LAGOS%20WEST%2C%20OUR%20SAVIOURS%20ANGLICAN%20CHURCH!5e0!3m2!1sen!2sng!4v1636834295138!5m2!1sen!2sng" width="370" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
                 <div class="contact_info">
+                    <div class="icon">
+                        <img src="./images/location.svg"/>
+                    </div>
                     BD1 5AF Bradford
                 </div>
                 <div class="contact_info">
-                    <ion-icon name="call-outline"></ion-icon>+447867390193, +2348038587759
+                    <div class="icon">
+                        <img src="./images/call.svg"/>
+                    </div>
+                    +447867390193
                 </div>
                 <div class="contact_info">
-                    <ion-icon name="mail-outline"></ion-icon> suleimanomubarak@gmail.com
+                    <div class="icon email_icon">
+                        <img src="./images/email.svg"/>
+                    </div>
+                    mubarak.suleiman@codevesel.co.uk
                 </div>
+                
+                <div class="social_text">Social Media</div>
                 <div class="socialmedial">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="https://www.linkedin.com/in/mubarak-suleiman-b0440191/" class="fa fa-linkedin"></a>
+                    <div class="icon">
+                        <img src="./images/fb.svg"/>
+                    </div>
+                    <div class="icon">
+                        <img src="./images/x.svg"/>
+                    </div>
+                    
+                    <a href="https://www.linkedin.com/in/mubarak-suleiman-b0440191/" target="_blank">
+                        <div class="icon">
+                            <img src="./images/linkedin.svg"/>
+                        </div>
+                    </a>
                 </div>
-           </div>
+           </div> -->
        </div>
    </div>
    <footer>
        <div class="copyright">© Copyright <b> Mubarak.</b> All Rights Reserved</div>
-       <div>Designed by khalisEngine System 2020</div>
+       <div>Designed by khalisEngine System 2024</div>
    </footer>
     
    

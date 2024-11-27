@@ -1,36 +1,62 @@
 header {
     width: 100%;
-    background-color: white;
+    /* background-color: #170051; */
+    /* background-color: rgba(23, 0, 81, 0.8); */
     position: fixed;
     top: 0px;
     left: 0px;
     z-index: 3;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); */
 }
+.fixedheader {
+    background-color: #0f0036;
+
+    animation: slide-in .3s ease-in;
+}
+@keyframes slide-in {
+    from {
+        top: -80px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
 .header_content {
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
     align-items: center;
-    color: royalblue;
-    padding: 0px 20px;
+    /* color: royalblue; */
+    padding: 10px 20px;
+    color: white;
 }
 .logo{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
 }
 .menu {
     display: flex;
 }
 .menu-item{
     margin-left: 20px;
-    padding: 20px;
+    padding: 25px 15px;
     cursor: pointer;
 }
 
+.btn {
+    background-color: #925DC8;
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 7px;
+}
+
 footer {
-    background-color: royalblue;
+    background-color: #0f0036;
     text-align: center;
     color: white;
     padding: 30px 20px;
@@ -40,7 +66,7 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-    header {
+    .header_content {
         padding: 20px 20px;
     }
     .menu {
