@@ -253,13 +253,18 @@ a {
         padding: 0px;
         grid-template-columns: 100%;
     }
+    .about_image {
+        display: none;
+    }
     .about_info{
         display: flex;
+        gap: 20px;
         justify-content: unset;
     }
 }
-@media screen and (max-width: 630px) {
-    .about_image{
+@media screen and (max-width: 800px) {
+    .about_image {
+        display: none;
         margin-bottom: 20px;
     }
     .about_info {
@@ -533,6 +538,19 @@ textarea {
     width: fit-content;
     margin: 0 auto;
     cursor: pointer;
+}
+.loader {
+    width: 165px;
+    height: 39px;
+    border-radius: 20px;
+    background-color: #0f0036;
+    color: white;
+    font-weight: 500;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact_text {

@@ -10,6 +10,64 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="MyFile.js"></script>  
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        
+
+        emailjs.init({
+            publicKey: 't5V1mwFXUCYIX4t3P',
+            // Do not allow headless browsers
+            blockHeadless: true,
+            limitRate: {
+                // Set the limit rate for the application
+                id: 'app',
+                // Allow 1 request per 10s
+                throttle: 3000,
+            },
+        });
+
+
+
+        function send_email() {
+            let name_input = document.getElementById('name_input').value
+            let email_input = document.getElementById('email_input').value
+            let subject_input = document.getElementById('subject_input').value
+            let message_input = document.getElementById('message_input').value
+
+            if (
+                name_input.length == '' || 
+                email_input.length == '' || 
+                subject_input.length == '' || 
+                message_input.length == ''
+            ) {
+                alert('All field are required')
+                return
+            }
+
+            document.getElementById('loader_el').style.display = 'flex'
+            document.getElementById('send_button').style.display = 'none'
+
+            let templateParams = {
+                'name': name_input,
+                'email': email_input,
+                'subject': subject_input,
+                'message': message_input
+            }
+
+            emailjs.send('service_35pxnph', 'template_ky1zaxb', templateParams).then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+
+                    window.location.reload()
+                },
+                (error) => {
+                    console.log('FAILED...', error);
+                },
+            );
+
+        }
+    </script>
 </head>
 <body>
     <header class="site-header" id="header">
@@ -278,11 +336,12 @@
        <div class="contact_grid">
            <div class="contact_form">
                 <div class="contact_title">Send a Message</div>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Subject">
-                <textarea name="" id="" placeholder="Message"></textarea>
-                <div class="contact_btn">Send Message</div>
+                <input type="text" placeholder="Name" id="name_input">
+                <input type="text" placeholder="Email" id="email_input">
+                <input type="text" placeholder="Subject" id="subject_input">
+                <textarea name="" placeholder="Message" id="message_input"></textarea>
+                <div class="contact_btn" id="send_button" onclick="send_email()">Send Message</div>
+                <div class="loader" id="loader_el">Sending...</div>
            </div>
            <!-- <div class="contact_details">
                 <div class="contact_title">Get in Touch</div>
@@ -327,6 +386,13 @@
        <div class="copyright">© Copyright <b> Mubarak.</b> All Rights Reserved</div>
        <div>Designed by khalisEngine System 2024</div>
    </footer>
+
+
+   <script>
+    
+        document.getElementById('loader_el').style.display = 'none'
+    
+   </script>
     
    
     
